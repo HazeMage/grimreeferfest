@@ -13,11 +13,30 @@ body{
   background-color: #ccd6a2;
 }
 
+@font-face {
+font-family: "CinzelDecor";
+src: url("fonts/Cinzel_Decorative/CinzelDecorative-Bold.ttf");
+}
+
+.CinzelDecor{
+    font-family: CinzelDecor;
+  }
+
+p{
+  font-family: Halvetica;
+  padding: 0 25px;
+}
 
 .content{
-  display: inline-block;
+  padding-bottom: 25px;
   width: 100%;
   margin: auto auto;
+}
+
+.content img{
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .center{
@@ -124,6 +143,16 @@ body{
   color: #fff;
 }
 
+.socialmediafooter{
+  width: 23px;
+  color: #fff;
+  margin: 25px 10px;
+}
+
+.footerlinks{
+  padding: 0 25px;
+}
+
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child), .dropdownmenu .dropbtn {
     display: none;
@@ -138,6 +167,15 @@ body{
 
   .topnav{
     display: block;
+  }
+
+  .footerlinks{
+    padding: 0 10px;
+    font-size: 12px;
+  }
+
+  p{
+    padding 0 5px;
   }
 }
 
@@ -199,4 +237,5 @@ footer a:hover{
 h1{
   padding: 25px 0;
   font-variant: small-caps;
+  font-family: CinzelDecor;
 }
